@@ -24,7 +24,7 @@ int main (int argc, char *argv[])
             exit(1);
         }
 
-        out = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0x0777);
+        out = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0777);
 
         if (out == -1)
         {
